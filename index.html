@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TickLock 틱락 · 고객 지원 / Support</title>
+<meta name="description" content="TickLock(틱락) 고객 지원: 게임 소개, 자주 묻는 질문, 구매 복원, 광고와 동의 안내, 문의. Support for TickLock: FAQ, restoring purchases, ads and consent, contact.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#111b20">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%23d9ae62' stroke-width='5' stroke-dasharray='58 11.2' transform='rotate(-60 16 16)'/%3E%3C/svg%3E">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#111b20;--bg-deep:#0c1418;--surface:#16242b;--surface-hi:#1b2d35;--line:#273c45;
+  --text:#e8eef0;--muted:#a3b4bb;--faint:#7a8f97;--brass:#d9ae62;--brass-hi:#f0d28f;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 -apple-system,BlinkMacSystemFont,"SF Pro Text","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+:lang(ko){word-break:keep-all;line-break:strict}
+a{color:var(--brass-hi);text-decoration:underline;text-decoration-color:rgba(240,210,143,.45);text-underline-offset:3px;overflow-wrap:anywhere}
+a:hover{text-decoration-color:currentColor}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--brass-hi);outline-offset:3px;border-radius:6px}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px}
+.bar{position:sticky;top:0;z-index:5;background:rgba(17,27,32,.88);-webkit-backdrop-filter:saturate(140%) blur(12px);backdrop-filter:saturate(140%) blur(12px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:52px}
+.brand{font-weight:700;letter-spacing:.02em;color:var(--text);text-decoration:none;white-space:nowrap}
+.brand b{color:var(--brass);font-weight:700}
+.links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:2px}
+.links a{color:var(--muted);text-decoration:none;font-size:14px;line-height:1.2;padding:7px 10px;border-radius:999px;border:1px solid transparent;white-space:nowrap}
+.links a:hover{color:var(--text);border-color:var(--line)}
+.links a[aria-current="page"]{color:var(--text);border-color:var(--line);background:var(--surface)}
+.hero{position:relative;overflow:hidden;padding:56px 0 28px}
+.dial{position:absolute;top:-56px;right:-72px;width:260px;height:260px;pointer-events:none;opacity:.55}
+.dial::before,.dial::after{content:"";position:absolute;inset:0;border-radius:50%}
+.dial::before{background:repeating-conic-gradient(from -1deg,rgba(217,174,98,.6) 0 2deg,transparent 2deg 15deg);-webkit-mask:radial-gradient(circle,transparent 0 60%,#000 61% 69%,transparent 70%);mask:radial-gradient(circle,transparent 0 60%,#000 61% 69%,transparent 70%)}
+.dial::after{inset:22%;background:conic-gradient(from 200deg,transparent 0 28deg,#2f6f73 28deg 360deg);-webkit-mask:radial-gradient(circle,transparent 0 56%,#000 57% 99%,transparent 100%);mask:radial-gradient(circle,transparent 0 56%,#000 57% 99%,transparent 100%)}
+.eyebrow{margin:0 0 10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+h1{position:relative;font-size:clamp(32px,8vw,46px);line-height:1.08;letter-spacing:-.01em;margin:0 0 10px}
+h1 span{color:var(--brass);font-weight:600}
+.tag{position:relative;margin:0;color:var(--muted);font-size:17px}
+section{scroll-margin-top:64px;padding-bottom:8px}
+.lang-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-top:1px solid var(--line);margin-top:28px;padding-top:28px}
+.lang-head{margin-bottom:14px}
+.lang-head h2{margin:0}
+.code{font:600 12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+h2{font-size:24px;line-height:1.3}
+h3{font-size:18px;line-height:1.4;margin:30px 0 10px}
+p{margin:0 0 14px}
+.lead{font-size:17px}
+ul{padding-left:1.2em;margin:0 0 14px}
+li{margin:4px 0}
+li::marker{color:var(--brass)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:18px 0 6px}
+.chips li{margin:0;font-size:14px;line-height:1.4;color:var(--muted);background:var(--bg-deep);border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:12px;margin:10px 0;padding:0 16px}
+details[open]{background:var(--surface-hi)}
+summary{cursor:pointer;list-style:none;position:relative;padding:14px 34px 14px 0;font-weight:600;line-height:1.5}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:6px;top:50%;width:8px;height:8px;border-right:2px solid var(--brass);border-bottom:2px solid var(--brass);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+details[open] summary::after{transform:translateY(-25%) rotate(225deg)}
+details p:last-child,details ul:last-child{margin-bottom:16px}
+kbd{display:inline-block;font:600 .8em/1 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif;letter-spacing:.03em;padding:.34em .6em .4em;border-radius:6px;color:var(--text);background:linear-gradient(#2c4049,#1f3038);border:1px solid #3b5661;border-bottom-width:3px;white-space:nowrap;vertical-align:.06em}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0}
+.mail{font-size:20px;font-weight:600;margin:4px 0 10px}
+.muted{color:var(--muted)}
+footer{border-top:1px solid var(--line);margin-top:44px;padding:22px 0 44px;color:var(--faint);font-size:14px}
+footer p{margin:0}
+@media (max-width:420px){.links a{padding:7px 7px;font-size:13px}.brand{font-size:15px}}
+@media (max-width:360px){.links .long{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}summary::after{transition:none}}
+</style>
+</head>
+<body>
+<nav class="bar" aria-label="Pages">
+  <div class="wrap">
+    <a class="brand" href="./">Tick<b>Lock</b></a>
+    <div class="links">
+      <a href="#ko" lang="ko">한국어</a>
+      <a href="#en" lang="en">English</a>
+      <a href="privacy.html"><span class="long" lang="ko">개인정보 · </span>Privacy</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="dial" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow">iPhone · iPad</p>
+    <h1>TickLock <span lang="ko">틱락</span></h1>
+    <p class="tag"><span lang="ko">딸깍 돌려 여는 퍼즐</span> · <span lang="en">Click, turn, unlock</span></p>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section id="ko" lang="ko" aria-labelledby="ko-title">
+  <div class="lang-head"><h2 id="ko-title">고객 지원</h2><span class="code">한국어</span></div>
+  <p class="lead">틱락은 황동 자물쇠에 매달린 고리를 돌려 푸는 손맛 퍼즐 게임이에요. 돌릴 때마다 다이얼처럼 딸깍 걸리고, 다 풀면 자물쇠가 철컥 열려요.</p>
+
+  <h3>이런 게임이에요</h3>
+  <ul>
+    <li>고리를 돌려 틈을 걸쇠에 맞추고 손을 떼면 걸쇠가 풀려요.</li>
+    <li>걸쇠가 하나도 안 남은 고리는 떨어지고, 고리가 모두 떨어지면 자물쇠가 열려요.</li>
+    <li>톱니로 물린 고리는 반대 방향으로 함께 돌아요. 볼트로 고정된 강철 고리는 톱니로만 돌릴 수 있어요.</li>
+    <li>15°마다 딸깍, 딸깍 한 번에 틱 하나를 써요. 레벨마다 틱 예산이 있어요.</li>
+  </ul>
+  <ul class="chips">
+    <li>레벨 60개 · 모두 풀 수 있음 검증</li>
+    <li>iPhone 햅틱 · 3D 키캡</li>
+    <li>한국어 · English</li>
+    <li>iPhone · iPad</li>
+    <li>계정 없음 · 기기에만 저장</li>
+  </ul>
+
+  <h3>자주 묻는 질문</h3>
+
+  <details>
+    <summary>광고 제거를 샀어요. 다시 설치했거나 새 기기에서는 어떻게 복원하나요?</summary>
+    <p>시작 화면이나 게임 중에 <kbd>설정</kbd> 키캡을 누른 뒤 <kbd>구매 복원</kbd>을 누르세요. 구매할 때 쓴 것과 같은 Apple 계정이어야 해요. 복원되면 "구매를 복원했어요"라는 안내가 나와요.</p>
+    <p>광고 제거는 전면 광고를 꺼요. 보상형 광고(추가 힌트, +10틱)는 원할 때만 보는 선택 항목으로 남아요.</p>
+  </details>
+
+  <details>
+    <summary>복원이 안 되거나 "복원할 구매가 없어요"라고 나와요.</summary>
+    <p>iOS 설정 &gt; [내 이름] &gt; 미디어 및 구입 항목의 Apple 계정이 구매할 때와 같은지, 인터넷에 연결되어 있는지 확인한 뒤 다시 눌러 주세요. 스크린 타임에서 앱 내 구입이 제한되어 있지 않은지도 확인해 주세요.</p>
+    <p>그래도 안 되면 구매한 날짜를 적어 메일로 알려 주세요. 환불은 Apple이 처리하며 <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>에서 요청할 수 있어요.</p>
+  </details>
+
+  <details>
+    <summary>광고는 언제 나오나요?</summary>
+    <p><strong>전면 광고</strong>는 레벨을 3개 깰 때마다(다음 레벨로 넘어갈 때), 그리고 되돌리기를 5번 연속으로 눌렀을 때 나올 수 있어요. 앱을 켠 직후와 보상형 광고를 본 직후에는 나오지 않고, 전면 광고 사이에는 쉬는 간격이 있어요.</p>
+    <p><strong>보상형 광고</strong>는 직접 고를 때만 재생돼요. 한 레벨에서 두 번째 힌트부터, 그리고 틱을 다 썼을 때 +10틱을 받을 때예요. 레벨마다 첫 힌트는 항상 무료예요.</p>
+  </details>
+
+  <details>
+    <summary>처음 플레이할 때 나오는 광고 동의 화면과 '추적 허용' 질문은 뭔가요?</summary>
+    <p>유럽경제지역(EEA), 영국, 스위스에서는 Google의 광고 동의 화면이 나와요. 선택은 <kbd>설정</kbd> → <kbd>개인정보</kbd>에서 언제든 바꿀 수 있어요.</p>
+    <p>'추적 허용'은 iOS가 묻는 질문이에요. 허용하면 Google 광고가 기기의 광고 식별자(IDFA)를 쓸 수 있어요. 허용하지 않아도 게임은 똑같이 즐길 수 있고, 나중에 iOS 설정 &gt; 개인정보 보호 및 보안 &gt; 추적에서 바꿀 수 있어요. 자세한 내용은 <a href="privacy.html#ko">개인정보 처리방침</a>에 있어요.</p>
+  </details>
+
+  <details>
+    <summary>진행 상황은 어디에 저장되나요? 기기를 바꾸면요?</summary>
+    <p>진행 상황과 설정은 이 기기에만 저장돼요. 계정이나 클라우드 동기화가 없어서 앱을 삭제하면 진행 상황도 함께 지워져요. 기기 백업에서 복원하면 이어질 수도 있지만 보장되지는 않아요.</p>
+    <p>광고 제거 구매는 언제든 <kbd>구매 복원</kbd>으로 되살릴 수 있어요.</p>
+  </details>
+
+  <details>
+    <summary>진동(햅틱)이 느껴지지 않아요.</summary>
+    <p><kbd>설정</kbd>에서 <kbd>진동</kbd>이 켜져 있는지 확인해 주세요. 햅틱은 iPhone에서 지원돼요. 대부분의 iPad에는 햅틱 엔진이 없어서, iPad에서는 소리와 화면의 디텐트가 손맛을 대신해요.</p>
+  </details>
+
+  <details>
+    <summary>소리가 안 나요.</summary>
+    <p><kbd>설정</kbd>에서 <kbd>소리</kbd>가 켜져 있는지, 기기 볼륨이 올라가 있는지 확인해 주세요. 무음 모드에서는 소리가 나지 않을 수 있어요.</p>
+  </details>
+
+  <details>
+    <summary>막혔어요. 너무 어려워요.</summary>
+    <p><kbd>힌트</kbd>를 누르면 어느 고리를 어느 쪽으로 몇 틱 돌릴지 알려 줘요(레벨마다 첫 힌트 무료). <kbd>되돌리기</kbd>는 언제든 쓸 수 있고, <kbd>다시</kbd>를 길게 누르면 처음부터 시작해요. 모든 레벨은 솔버로 풀 수 있음을 검증했어요.</p>
+  </details>
+
+  <details>
+    <summary>언어를 바꾸고 싶어요.</summary>
+    <p><kbd>설정</kbd> → <kbd>언어</kbd>를 누를 때마다 한국어와 영어가 바뀌어요.</p>
+  </details>
+
+  <h3 id="ko-contact">문의하기</h3>
+  <div class="card">
+    <p>궁금한 점이나 문제가 있으면 메일을 보내 주세요.</p>
+    <p class="mail"><a href="mailto:jehyung25@gmail.com?subject=TickLock">jehyung25@gmail.com</a></p>
+    <p class="muted">기기 모델, iOS 버전, 레벨 번호를 함께 적어 주시면 더 빨리 도와드릴 수 있어요.</p>
+  </div>
+</section>
+
+<section id="en" lang="en" aria-labelledby="en-title">
+  <div class="lang-head"><h2 id="en-title">Support</h2><span class="code">English</span></div>
+  <p class="lead">TickLock is a tactile puzzle about rings hanging from a brass padlock. Every turn clicks into place like a dial, and when you solve a level the padlock snaps open.</p>
+
+  <h3>How it plays</h3>
+  <ul>
+    <li>Turn a ring until its gap sits on a clip, then let go: the clip springs open.</li>
+    <li>A ring with no clips left drops away. Drop every ring and the padlock opens.</li>
+    <li>Geared rings turn together, in opposite directions. Bolted steel rings only turn through their gears.</li>
+    <li>Every 15° click costs one tick, and each level has a tick budget.</li>
+  </ul>
+  <ul class="chips">
+    <li>60 levels · all verified solvable</li>
+    <li>iPhone haptics · 3D keycaps</li>
+    <li>English · 한국어</li>
+    <li>iPhone · iPad</li>
+    <li>No account · stored on device</li>
+  </ul>
+
+  <h3>FAQ</h3>
+
+  <details>
+    <summary>I bought Remove Ads. How do I restore it after reinstalling or on a new device?</summary>
+    <p>Tap the <kbd>SETTINGS</kbd> keycap (on the title screen or during play), then <kbd>RESTORE</kbd>. Use the same Apple Account you bought it with. You'll see "Purchase restored".</p>
+    <p>Remove Ads turns off full-screen ads. Rewarded ads (extra hints, +10 ticks) stay optional and only play when you choose.</p>
+  </details>
+
+  <details>
+    <summary>Restore doesn't work, or it says "Nothing to restore".</summary>
+    <p>Check that iOS Settings &gt; [your name] &gt; Media &amp; Purchases uses the same Apple Account as the purchase and that you're online, then try again. Also make sure Screen Time isn't blocking in-app purchases.</p>
+    <p>Still stuck? Email me with the purchase date. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+  </details>
+
+  <details>
+    <summary>When do ads appear?</summary>
+    <p><strong>Full-screen ads</strong> may appear after every 3 cleared levels (when you move on to the next level) and after 5 undos in a row. They don't appear right after you open the app or right after a rewarded ad, and there is a cooldown between them.</p>
+    <p><strong>Rewarded ads</strong> play only when you choose one: from the second hint in a level, and for +10 ticks when you run out. The first hint in every level is always free.</p>
+  </details>
+
+  <details>
+    <summary>What are the ad consent form and the "Allow tracking" prompt?</summary>
+    <p>In the EEA, the UK and Switzerland, Google's ad consent form appears. You can change your choice any time under <kbd>SETTINGS</kbd> → <kbd>PRIVACY</kbd>.</p>
+    <p>"Allow tracking" is an iOS prompt. If you allow it, Google's ads can use your device's advertising identifier (IDFA). The game plays exactly the same either way, and you can change it later in iOS Settings &gt; Privacy &amp; Security &gt; Tracking. Details are in the <a href="privacy.html#en">privacy policy</a>.</p>
+  </details>
+
+  <details>
+    <summary>Where is my progress saved? What if I change devices?</summary>
+    <p>Progress and settings are stored only on this device. There is no account or cloud sync, so deleting the app also deletes your progress. Restoring a device backup may bring it back, but that isn't guaranteed.</p>
+    <p>Remove Ads can always be brought back with <kbd>RESTORE</kbd>.</p>
+  </details>
+
+  <details>
+    <summary>I can't feel the haptics.</summary>
+    <p>Check that <kbd>HAPTICS</kbd> is on in <kbd>SETTINGS</kbd>. Haptics work on iPhone. Most iPads have no haptic engine, so on iPad the sound and visual detents carry the feel.</p>
+  </details>
+
+  <details>
+    <summary>There's no sound.</summary>
+    <p>Check that <kbd>SOUND</kbd> is on in <kbd>SETTINGS</kbd> and that the volume is up. Sound may be muted while the device is in Silent mode.</p>
+  </details>
+
+  <details>
+    <summary>I'm stuck. This level is too hard.</summary>
+    <p>Tap <kbd>HINT</kbd> to see which ring to turn, which way and how many ticks (the first hint in each level is free). <kbd>UNDO</kbd> is always available, and holding <kbd>RESTART</kbd> starts the level over. Every level is verified solvable by a solver.</p>
+  </details>
+
+  <details>
+    <summary>How do I change the language?</summary>
+    <p>Tap <kbd>SETTINGS</kbd> → <kbd>LANGUAGE</kbd> to switch between English and Korean.</p>
+  </details>
+
+  <h3 id="en-contact">Contact</h3>
+  <div class="card">
+    <p>Questions or problems? Send me an email.</p>
+    <p class="mail"><a href="mailto:jehyung25@gmail.com?subject=TickLock">jehyung25@gmail.com</a></p>
+    <p class="muted">Including your device model, iOS version and level number helps me help you faster.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Jehyung Lee · <a href="mailto:jehyung25@gmail.com">jehyung25@gmail.com</a> · <a href="privacy.html">개인정보 처리방침 / Privacy Policy</a></p>
+  </div>
+</footer>
+</body>
+</html>
